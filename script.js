@@ -26,17 +26,3 @@ btn.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-// Tester l'autre partie ici, si, satisfait :
-
-
-
-// ici
