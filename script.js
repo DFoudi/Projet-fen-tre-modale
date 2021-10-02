@@ -1,24 +1,42 @@
-const btn = document.querySelector('.btn');
-const modal = document.querySelector('.modal');
+const btn = document.querySelector(".btn");
+const modal = document.querySelector(".modal");
 
 let toggle = false;
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
+  toggle = !toggle;
 
-    toggle = !toggle;
+  if (toggle) {
+    modal.style.display = "block";
+    setTimeout(() => {
+      modal.style.opacity = 1;
+    }, 10);
+  } else if (toggle === false) {
+    modal.style.opacity = 0;
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 10);
+  }
+});
 
-    if(toggle) {
-        modal.style.display = "block";
-        setTimeout(() => {
-            modal.style.opacity = 1;
-        }, 10)
-        
-    }
-    else if (toggle === false) {
-        modal.style.opacity = 0;
-        setTimeout(() => {
-            modal.style.display = "none";
-        }, 10)
-        
-    }
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Tester l'autre partie ici, si, satisfait :
+
+
+
+// ici
